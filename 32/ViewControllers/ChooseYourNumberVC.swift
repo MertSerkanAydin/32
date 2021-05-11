@@ -37,7 +37,7 @@ class ChooseYourNumberVC: UIViewController {
 //        Create Textfield
                         
         playerNumberTextField.frame = CGRect(x: width / 8, y: height / 2, width: width / 1.3, height: height / 20)
-        playerNumberTextField.placeholder = "Name of Playe\(playerNamesInput)r"
+        playerNumberTextField.placeholder = "Write your Number"
         playerNumberTextField.borderStyle = UITextField.BorderStyle.line
         playerNumberTextField.backgroundColor = UIColor.white
         playerNumberTextField.textColor = UIColor.black
