@@ -11,7 +11,9 @@ class nameOfPlayersVC: UIViewController {
 
     var selectedNumberOfPlayers = ""
     let nameOfPlayersLabel = UILabel()
-    var playerNames = [String]()
+    var playerNamesArray = [UITextField?]()
+    var playerNamesInputArray = [String]()
+    var playersTextField = UITextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,7 @@ class nameOfPlayersVC: UIViewController {
         if let selectedNumberOfPlayersToInt = Int(selectedNumberOfPlayers) {
             for index in 1...selectedNumberOfPlayersToInt {
                 
-        let playersTextField : UITextField = UITextField(frame: CGRect(x: width / 8, y: textfieldY, width: width / 1.3, height: height / 20))
+                playersTextField = UITextField(frame: CGRect(x: width / 8, y: textfieldY, width: width / 1.3, height: height / 20))
                 textfieldY = textfieldY + 60
                 playersTextField.tag = index
                 playersTextField.placeholder = "Name of Player \(index)"
@@ -51,7 +53,7 @@ class nameOfPlayersVC: UIViewController {
                 playersTextField.backgroundColor = UIColor.white
                 playersTextField.textColor = UIColor.black
                 self.view.addSubview(playersTextField)
-            
+                playerNamesArray.append(playersTextField)
             }
         }
         
@@ -59,10 +61,21 @@ class nameOfPlayersVC: UIViewController {
     
     @objc func toChooseYourNumberVC() {
         
+        for i in playerNamesArray {
+            playerNamesInputArray.append((i?.text)!)
+        }
         
-        performSegue(withIdentifier: "toChooseYourNumberVC", sender: nil)
+        performSegue(withIdentifier: "toChooseYourNumberVC", sender: nil)        
+        
     }
-  
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toChooseYourNumberVC" {
+            let destinationVC = segue.destination as! ChooseYourNumberVC
+            destinationVC.playerNamesInput = playerNamesInputArray
+        }
+    }
+    
     @objc func hideKeyboard() {
         view.endEditing(true)
     }

@@ -11,6 +11,8 @@ class ChooseYourNumberVC: UIViewController {
 
     let writeeYourNumber = UILabel()
     var playerNumberTextField = UITextField()
+    var playerNamesInput = [String]()
+    let myButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +37,20 @@ class ChooseYourNumberVC: UIViewController {
 //        Create Textfield
                         
         playerNumberTextField.frame = CGRect(x: width / 8, y: height / 2, width: width / 1.3, height: height / 20)
-        playerNumberTextField.placeholder = "Name of Player"
+        playerNumberTextField.placeholder = "Name of Playe\(playerNamesInput)r"
         playerNumberTextField.borderStyle = UITextField.BorderStyle.line
         playerNumberTextField.backgroundColor = UIColor.white
         playerNumberTextField.textColor = UIColor.black
         self.view.addSubview(playerNumberTextField)
-                    
+        
+        
+//        Create Next Button
+        
+        myButton.setTitle("Next", for: UIControl.State.normal)
+        myButton.setTitleColor(UIColor.green, for: UIControl.State.normal)
+        myButton.frame = CGRect(x: width / 2.35, y: height / 1.4, width: 100, height: 100)
+        myButton.addTarget(self, action: #selector(ChooseYourNumberVC.nextPlayer), for: UIControl.Event.touchUpInside)
+        view.addSubview(myButton)
                     
                 
     }
@@ -49,4 +59,7 @@ class ChooseYourNumberVC: UIViewController {
         view.endEditing(true)
     }
     
+    @objc func nextPlayer() {
+        
+    }
 }
