@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E594D16C237FEF4A159B22E /* Pods_32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A546A43CAB4683981647F82 /* Pods_32.framework */; };
+		B2C866772656B09D00D69C35 /* PlayerInformationsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C866762656B09D00D69C35 /* PlayerInformationsStruct.swift */; };
 		B2DC77D426491D0C001C23BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC77D326491D0C001C23BE /* AppDelegate.swift */; };
 		B2DC77D626491D0C001C23BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC77D526491D0C001C23BE /* SceneDelegate.swift */; };
 		B2DC77D826491D0C001C23BE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC77D726491D0C001C23BE /* HomeVC.swift */; };
@@ -14,11 +16,13 @@
 		B2DC77DD26491D11001C23BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DC77DC26491D11001C23BE /* Assets.xcassets */; };
 		B2DC77E026491D11001C23BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DC77DE26491D11001C23BE /* LaunchScreen.storyboard */; };
 		B2DC77EB2649206D001C23BE /* nameOfPlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC77EA2649206D001C23BE /* nameOfPlayersVC.swift */; };
-		B2DC77EE2649208E001C23BE /* ChooseYourNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC77ED2649208E001C23BE /* ChooseYourNumberVC.swift */; };
 		B2DC77F1264920AC001C23BE /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DC77F0264920AC001C23BE /* GameVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27AE19801E4E16064BF18E04 /* Pods-32.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-32.release.xcconfig"; path = "Target Support Files/Pods-32/Pods-32.release.xcconfig"; sourceTree = "<group>"; };
+		7A546A43CAB4683981647F82 /* Pods_32.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_32.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C866762656B09D00D69C35 /* PlayerInformationsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInformationsStruct.swift; sourceTree = "<group>"; };
 		B2DC77D026491D0C001C23BE /* 32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 32.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DC77D326491D0C001C23BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2DC77D526491D0C001C23BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +32,8 @@
 		B2DC77DF26491D11001C23BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2DC77E126491D11001C23BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2DC77EA2649206D001C23BE /* nameOfPlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameOfPlayersVC.swift; sourceTree = "<group>"; };
-		B2DC77ED2649208E001C23BE /* ChooseYourNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseYourNumberVC.swift; sourceTree = "<group>"; };
 		B2DC77F0264920AC001C23BE /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		D8A73CBFE489BD1DBCC0B198 /* Pods-32.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-32.debug.xcconfig"; path = "Target Support Files/Pods-32/Pods-32.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E594D16C237FEF4A159B22E /* Pods_32.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AA7B5B00BC24FC1DD579002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A546A43CAB4683981647F82 /* Pods_32.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2DC77C726491D0C001C23BE = {
 			isa = PBXGroup;
 			children = (
 				B2DC77D226491D0C001C23BE /* 32 */,
 				B2DC77D126491D0C001C23BE /* Products */,
+				EBFF8E1812ACEE8CBB206D44 /* Pods */,
+				9AA7B5B00BC24FC1DD579002 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +77,7 @@
 		B2DC77D226491D0C001C23BE /* 32 */ = {
 			isa = PBXGroup;
 			children = (
+				B2C866762656B09D00D69C35 /* PlayerInformationsStruct.swift */,
 				B2DC77E826491EC5001C23BE /* ViewControllers */,
 				B2DC77D326491D0C001C23BE /* AppDelegate.swift */,
 				B2DC77D526491D0C001C23BE /* SceneDelegate.swift */,
@@ -78,10 +94,18 @@
 			children = (
 				B2DC77D726491D0C001C23BE /* HomeVC.swift */,
 				B2DC77EA2649206D001C23BE /* nameOfPlayersVC.swift */,
-				B2DC77ED2649208E001C23BE /* ChooseYourNumberVC.swift */,
 				B2DC77F0264920AC001C23BE /* GameVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EBFF8E1812ACEE8CBB206D44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8A73CBFE489BD1DBCC0B198 /* Pods-32.debug.xcconfig */,
+				27AE19801E4E16064BF18E04 /* Pods-32.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2DC77E426491D11001C23BE /* Build configuration list for PBXNativeTarget "32" */;
 			buildPhases = (
+				51589D3494C5A71248DC51E2 /* [CP] Check Pods Manifest.lock */,
 				B2DC77CC26491D0C001C23BE /* Sources */,
 				B2DC77CD26491D0C001C23BE /* Frameworks */,
 				B2DC77CE26491D0C001C23BE /* Resources */,
+				F3A0DE19BCA8E9EE92C90B18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,17 +175,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51589D3494C5A71248DC51E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-32-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3A0DE19BCA8E9EE92C90B18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-32/Pods-32-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-32/Pods-32-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-32/Pods-32-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2DC77CC26491D0C001C23BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C866772656B09D00D69C35 /* PlayerInformationsStruct.swift in Sources */,
 				B2DC77D826491D0C001C23BE /* HomeVC.swift in Sources */,
 				B2DC77F1264920AC001C23BE /* GameVC.swift in Sources */,
 				B2DC77D426491D0C001C23BE /* AppDelegate.swift in Sources */,
 				B2DC77D626491D0C001C23BE /* SceneDelegate.swift in Sources */,
 				B2DC77EB2649206D001C23BE /* nameOfPlayersVC.swift in Sources */,
-				B2DC77EE2649208E001C23BE /* ChooseYourNumberVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +371,7 @@
 		};
 		B2DC77E526491D11001C23BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A73CBFE489BD1DBCC0B198 /* Pods-32.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +391,7 @@
 		};
 		B2DC77E626491D11001C23BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27AE19801E4E16064BF18E04 /* Pods-32.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

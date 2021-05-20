@@ -39,30 +39,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="sis-LC-Y1P"/>
                     <connections>
-                        <segue destination="hzm-O0-v1s" kind="presentation" identifier="toChooseYourNumberVC" modalPresentationStyle="fullScreen" id="J1O-9Q-iIt"/>
+                        <segue destination="mNZ-Ep-BiO" kind="presentation" identifier="toGameVC" modalPresentationStyle="fullScreen" id="eMq-GC-cKy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7Q-Ch-cn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1834.7826086956522" y="79.6875"/>
-        </scene>
-        <!--Choose Your NumberVC-->
-        <scene sceneID="bbn-3x-Tze">
-            <objects>
-                <viewController id="hzm-O0-v1s" customClass="ChooseYourNumberVC" customModule="_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aLX-GI-PzZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="82X-8n-k1c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <segue destination="mNZ-Ep-BiO" kind="presentation" identifier="toGameVC" modalPresentationStyle="fullScreen" id="0xB-7K-GXa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dv4-Mv-r4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2731.8840579710145" y="79.6875"/>
         </scene>
         <!--GameVC-->
         <scene sceneID="XkM-Yx-cJW">
@@ -77,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9Y-6B-RZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730" y="875"/>
+            <point key="canvasLocation" x="2703" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PBF-zK-c00">
